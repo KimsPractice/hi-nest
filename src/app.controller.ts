@@ -12,6 +12,6 @@ export class AppController {
 
   @Get('/hello')
   sayHello(): string {
-    return 'hello router';
+    return this.appService.getHi();
   }
 }
